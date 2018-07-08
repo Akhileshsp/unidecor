@@ -1,0 +1,238 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+   }
+
+.bgimg {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: black;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 2vw;
+}
+
+
+.middle {
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-top:0px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding-top: 80px;
+  height: 100%s;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+@supports (position: sticky) {
+  body {
+    padding-top: 0;
+  }
+
+  header {
+    position: sticky;
+  }
+
+}
+
+.navbar {
+  position: relative;
+  height: auto;
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+.navbar .nav {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: right;
+  margin-right: 5%;
+}
+
+.navbar .nav .item {
+  list-style: none;
+  display: inline-block;
+  font-size: 18px;
+  padding: 5px;
+  font-weight: 300;
+  line-height: 80px;
+  margin-right: 20px;
+  transition: 0.5s ease;
+}
+
+.navbar .nav .item .contact {
+  display: inline-block;
+  height: 40px;
+  line-height: 30px;
+  padding: 5px;
+  border-radius: 2px;
+  transition: 0.5s ease;
+}
+
+.navbar .nav .item a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar .logo {
+  float: left;
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 2%;
+  transition: 0.5s ease;
+}
+
+.navbar .logo img {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+
+.scrolled {
+ transition: 0.5s ease;
+}
+
+.scrolled.navbar {
+  height: 50px; 
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: 0.5s ease;
+
+}
+
+
+.scrolled.navbar .nav .item {
+  line-height: 40px;
+  transition: 0.5s ease;
+}
+
+.scrolled.navbar .nav .item .contact {
+  display: inline-block;
+  background-color: #ffffff;
+  height: 40px;
+  line-height: 30px;
+  padding: 5px;
+  border-radius: 2px;
+  transition: 0.5s ease;
+}
+
+.scrolled.navbar .logo {
+  float: left;
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 5%;
+  width: 40px;
+  height: 40px;
+  background-color: firebrick;
+  transition: 0.5s ease;
+}
+
+@keyframes example {
+    0%   { left:500px; top:0px;}
+    100% { left:0px; top:0px;}
+}
+
+/* The element to apply the animation to */
+.logo {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+}   
+
+/* offers */
+* {
+    box-sizing: border-box;
+}
+
+.zoom1 {
+    padding: 50px;
+    background-image: url("https://images.pexels.com/photos/279719/pexels-photo-279719.jpeg?auto=compress&cs=tinysrgb&h=350");
+    transition: transform .2s;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    box-shadow: 10px 10px 10px grey;
+}
+.zoom1:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+
+.zoom2 {
+    padding: 50px;
+    background-image: url("http://www.msfl.ru/foto12.png?i=10302&k=dizajn-gostinoj-v-cherno-belih-tonah-foto");
+    transition: transform .2s;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+.zoom2:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+
+.zoom3 {
+    padding: 50px;
+    background-image: url("https://www.rsdesign.com.br/wp-content/uploads/2016/04/principais-beneficios-de-moveis-para-escritorios-de-alto-padrao.jpg");
+    transition: transform .2s;
+    width: 50%;
+    height: 40%;
+    margin: 0 auto;
+}
+.zoom3:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+
+#demo1
+{
+    text-align: center;
+    text-shadow: 10px 10px 5px grey;
+}
+#demo2
+{
+    text-align: center;
+    text-shadow: 10px 10px 5px grey;
+}
+#demo3
+{
+    text-align: center;
+    text-shadow: 10px 10px 5px grey;
+}
